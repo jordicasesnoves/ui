@@ -1,0 +1,21 @@
+{
+	"name": "@jordicasesnoves/ui",
+	"private": true,
+	"version": "1.0.0",
+	"workspaces": [
+		"packages/*"
+	],
+	"description": "Component library for @jordicasesnoves project ecosystem.",
+	"scripts": {
+		"format": "npx biome format ./packages"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jordicasesnoves/ui.git"
+	},
+	"author": "@jordicasesnoves",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jordicasesnoves/ui/issues"
+	}
+}

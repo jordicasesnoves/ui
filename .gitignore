@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# ide
+.idea
+.fleet
+.vscode
+
+# misc
+.DS_Store
+*.pem
