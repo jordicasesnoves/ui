@@ -1,0 +1,10 @@
+{
+	"name": "@jordicasesnoves-ui/flex",
+	"version": "0.1.0",
+	"description": "",
+	"main": "dist/index.js",
+	"files": ["dist", "README.md"],
+	"keywords": ["react", "components", "flex"],
+	"author": "Jordi Casesnoves Martín",
+	"license": "MIT"
+}

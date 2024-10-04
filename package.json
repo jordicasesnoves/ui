@@ -2,12 +2,12 @@
 	"name": "@jordicasesnoves/ui",
 	"private": true,
 	"version": "1.0.0",
-	"workspaces": [
-		"packages/*"
-	],
+	"workspaces": ["packages/*"],
 	"description": "Component library for @jordicasesnoves project ecosystem.",
 	"scripts": {
-		"format": "npx biome format ./packages"
+		"format": "biome format ./packages",
+		"lint": "biome lint ./packages",
+		"build": "npm run lint && tsc --build"
 	},
 	"repository": {
 		"type": "git",
@@ -17,5 +17,15 @@
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/jordicasesnoves/ui/issues"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.3",
+		"@types/react": "^18.3.11",
+		"@types/react-dom": "^18.3.0",
+		"typescript": "^5.6.2"
+	},
+	"peerDependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
 	}
 }

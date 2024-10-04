@@ -1,0 +1,18 @@
+{
+	"references": [{ "path": "./packages/flex" }],
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"target": "es6",
+		"module": "commonjs",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"outDir": "./dist",
+		"rootDir": "./packages",
+		"declaration": true,
+		"composite": true
+	},
+	"include": ["packages/*/src"],
+	"exclude": ["node_modules", "**/*.spec.ts", "dist", "packages/*/dist"]
+}
