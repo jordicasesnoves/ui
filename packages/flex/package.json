@@ -1,10 +1,16 @@
 {
 	"name": "@jordicasesnoves-ui/flex",
+	"type": "module",
 	"version": "0.1.0",
 	"description": "",
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"files": ["dist", "README.md"],
 	"keywords": ["react", "components", "flex"],
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
 	"author": "Jordi Casesnoves Martín",
 	"license": "MIT"
 }

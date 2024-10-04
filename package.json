@@ -1,5 +1,6 @@
 {
 	"name": "@jordicasesnoves/ui",
+	"type": "module",
 	"private": true,
 	"version": "1.0.0",
 	"workspaces": ["packages/*"],
@@ -7,7 +8,8 @@
 	"scripts": {
 		"format": "biome format ./packages",
 		"lint": "biome lint ./packages",
-		"build": "npm run lint && tsc --build"
+		"build": "npm run build --workspaces",
+		"dev": "npm run dev --workspaces"
 	},
 	"repository": {
 		"type": "git",
@@ -22,7 +24,12 @@
 		"@biomejs/biome": "^1.9.3",
 		"@types/react": "^18.3.11",
 		"@types/react-dom": "^18.3.0",
-		"typescript": "^5.6.2"
+		"@vitejs/plugin-react": "^4.3.2",
+		"sass-embedded": "^1.79.4",
+		"typescript": "^5.6.2",
+		"vite": "^5.4.8",
+		"vite-plugin-dts": "^4.2.3",
+		"vite-plugin-lib-inject-css": "^2.1.1"
 	},
 	"peerDependencies": {
 		"react": "^18.3.1",
